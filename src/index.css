@@ -1,13 +1,45 @@
+@import url('./components/fonts/fonts.css');
+
 body {
+  font-family: 'Roboto';
+  font-style: normal;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.scroll-block {
+  overflow: hidden;
+}
+
+p, ul, li, h1, h2, h3, h4 {
+  margin: 0;
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: unset;
+}
+
+button {
+  border-radius: 5px;
+  background-color: #000;
+  color: #fff;
+  border: 0;
+  align-self: center;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.App {
+  background-color: #f2f2f2;
+}
+
+.selected {
+  color: #fff;
+  background: #000;
+  box-shadow: 10px 0 #000, -10px 0 #000;
 }

@@ -1,0 +1,64 @@
+.main {
+    height: 100vh;
+    display: flex;
+}
+
+.main__container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-self: center;
+    align-content: center;
+    width: 50%;
+}
+
+.main__name {
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 52px;
+    text-align: center;
+}
+
+.main__description{
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    margin: 5vw 15%
+}
+
+.main__button {
+    width: 20vw;
+    height: 4.5vw;
+}
+
+.main__button-link{
+    align-self: center;
+}
+
+@media screen and (max-width: 768px) {
+    .main__container {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .main__name {
+        font-weight: 500;
+        font-size: 7vw;
+        line-height: 8vw;
+    }
+
+    .main__description{
+        font-size: 18px;
+        line-height: 22px;
+        margin: 20px 5%
+    }
+
+    .main__button {
+        width: 30vw;
+        height: 6vw;
+        font-size: 2vw;
+    }
+    
+}

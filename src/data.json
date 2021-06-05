@@ -1,0 +1,57 @@
+[
+    {
+        "id": "1",
+        "name": "newsAnalyzer",
+        "text": "дипломный проект ЯндексПрактикум. Поиск популярных новостей за неделю по ключевому слову.",
+        "tech": [
+            "js",
+            "html",
+            "css",
+            "webpack",
+            "git",
+            "babel",
+            "БЭМ"
+        ],
+        "link": "https://sajkeekloch.github.io/diplomav2/",
+        "linkText": "смотреть проект"
+    },
+    {
+        "id": "2",
+        "name": "mesto",
+        "text": "учебный проект ЯндексПрактикум. Освоены основы fetch-запросов, валидация форм.",
+        "tech": [
+            "js",
+            "html",
+            "css",
+            "webpack",
+            "git",
+            "babel",
+            "БЭМ"
+        ],
+        "link": "https://sajkeekloch.github.io/mesto",
+        "linkText": "смотреть проект"
+    },
+    {
+        "id": "3",
+        "name": "russia",
+        "text": "первый, самостоятельно выполенный, проект. Закрепленеие навыков адаптивной верстки.",
+        "tech": [
+            "html",
+            "css",
+            "git",
+            "БЭМ"
+        ],
+        "link": "https://sajkeekloch.github.io/russia",
+        "linkText": "смотреть проект"
+    },
+    {
+        "id": "4",
+        "name": "sajkeekloch",
+        "text": "здесь ссылка на остальные репозитории. Там есть еще несколько собственных проектов и выполненные тестовые задания.",
+        "tech": [
+        ],
+        "link": "https://github.com/sajkeekloch?tab=repositories",
+        "linkText": "смотреть проекты"
+    }
+    
+]
