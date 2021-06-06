@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/klochkov/static/css/main.33d176aa.chunk.css",
-    "main.js": "/klochkov/static/js/main.52294df8.chunk.js",
-    "main.js.map": "/klochkov/static/js/main.52294df8.chunk.js.map",
+    "main.js": "/klochkov/static/js/main.1b9abbb6.chunk.js",
+    "main.js.map": "/klochkov/static/js/main.1b9abbb6.chunk.js.map",
     "runtime-main.js": "/klochkov/static/js/runtime-main.8ec9c2b4.js",
     "runtime-main.js.map": "/klochkov/static/js/runtime-main.8ec9c2b4.js.map",
     "static/js/2.37a8ce07.chunk.js": "/klochkov/static/js/2.37a8ce07.chunk.js",
@@ -30,6 +30,6 @@
     "static/js/runtime-main.8ec9c2b4.js",
     "static/js/2.37a8ce07.chunk.js",
     "static/css/main.33d176aa.chunk.css",
-    "static/js/main.52294df8.chunk.js"
+    "static/js/main.1b9abbb6.chunk.js"
   ]
 }
