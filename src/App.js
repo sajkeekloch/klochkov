@@ -45,7 +45,7 @@ function App() {
       <Header 
         handleMenu= {handleMenu}
       />
-      <Route exact path='/'>
+      <Route exact path='/klochkov'>
         <Main/>
       </Route>
       <Route path='/projects'>

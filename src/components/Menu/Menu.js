@@ -16,7 +16,7 @@ export default function Menu(props) {
                     <li className="menu__item">
                         <NavLink 
                             activeClassName="selected"
-                            exact to="/"
+                            exact to="/klochkov"
                             onClick={handleMenu}
                             >клочков</NavLink>
                     </li>

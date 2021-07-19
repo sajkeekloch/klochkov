@@ -17,7 +17,7 @@ function Header(props) {
             />
             <NavLink 
                 className="regular"
-                exact to='/'
+                exact to='/klochkov'
                 activeClassName="selected">
                 клочков
             </NavLink>
