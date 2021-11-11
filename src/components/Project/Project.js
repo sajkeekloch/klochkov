@@ -1,3 +1,4 @@
+import image0 from '../images/0.png'
 import image1 from '../images/1.png'
 import image2 from '../images/2.png'
 import image3 from '../images/3.png'
