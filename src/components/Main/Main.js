@@ -11,14 +11,12 @@ function Main() {
     return(
         <div className="main">
             <div className="main__container">
-                <h1 className="main__name">Александр Клочков</h1>
-                <p className="main__description">Фронтенд-разработчик. Прошел курс от ЯндексПрактикум. </p>
+                <h1 className="main__name"> Клочков Александр</h1>
+                <p className="main__description">Фронтенд-разработчик.</p>
                 <NavLink className="main__button-link" to='/projects'>
                     <button className="main__button button">смотреть проекты</button>
                 </NavLink>
-                
             </div>
-            
         </div>
     )
 }

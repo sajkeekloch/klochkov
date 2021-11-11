@@ -10,7 +10,10 @@ function Project(props) {
         return(<li className="project__tech_item" key={ index }> { el } </li>)
     })
     let image = placeHolder
-    if(props.data.id === "1") {
+    if(props.data.id === "0") {
+        image = image0
+    }
+    else if(props.data.id === "1") {
         image = image1
     }
     else if(props.data.id === "2") {
