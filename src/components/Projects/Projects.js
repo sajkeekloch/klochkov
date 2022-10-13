@@ -1,15 +1,16 @@
 import Project from '../Project/Project'
-import './Projects.css'
-import data from '../../data.json'
 import { useEffect } from 'react'
+import { Container, SecondaryTitle, List } from '../../assets/customStyled'
+import styled from 'styled-components'
+import dataProjects from '../../dataProjects'
 
 function Projects() {
-    let projects = data.map((el) => {
+    let projects = dataProjects.map((el) => {
         return( 
             <Project 
                 key = { el.id } 
                 data = { el }
-                /> 
+            /> 
         )
     })
 
@@ -17,13 +18,17 @@ function Projects() {
         document.title = "проекты"
     })
 
+    const ProjectsList = styled(List)`
+        flex-direction: column;  
+    `
+
     return(
-        <div className="projects">
-            <h2 className="projects__title">Проекты</h2>
-            <div className="projects__container">
+        <Container>
+            <SecondaryTitle>Проекты</SecondaryTitle>
+            <ProjectsList>
                 { projects }
-            </div>
-        </div>
+            </ProjectsList>
+        </Container>
     )
 }
 

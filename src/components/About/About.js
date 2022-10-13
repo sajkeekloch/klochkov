@@ -1,85 +1,70 @@
-import './About.css'
-import gori from '../images/gori.png'
-import league from '../images/league.png'
-import lovecraft from '../images/lovecraft.png'
-import skate from '../images/skate.png'
-import food from '../images/food.png'
-import film from '../images/film.png'
 import {React, useEffect} from 'react'
+import { Container, SecondaryTitle, shadow } from '../../assets/customStyled'
+import styled from 'styled-components'
+import placeholder from '../../assets/images/placeHolder.jpeg'
+import hobbies from '../../dataHobby' 
 
 function About() {
+
+    const HobbiesContainer = styled(Container)`
+        align-self: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 0;
+        padding-bottom: 10vw;
+    `
+
+    const CardContainer = styled.div`
+        width: 21vw;
+        height: 21vw;
+        color: white;
+        text-align: center; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    `
+
+    const HobbyCard = styled(shadow)`
+        width: 21vw;
+        height: 21vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+    `
+
+    const CardBackground = styled.img`
+        width: 21vw;
+        height: 21vw;
+    `
+
+    const cards = hobbies.map(el => {
+        return (
+                <CardContainer key = { el.id }>
+                    <CardBackground
+                        src= { el.image || placeholder }
+                    />
+                    <HobbyCard>
+                        { el.text }
+                    </HobbyCard>
+                </CardContainer>
+        )
+    })
 
     useEffect(() => {
         document.title = "обо мне"
     })
 
     return(
-        <div className="about">
-            <h2 className='about__title'>Мне нравится</h2>
-            <div className="about__hobbies">
-                <div 
-                    className="about__hobby"
-                    style={{
-                        backgroundImage: `url(${gori})`
-                    }}
-                >
-                    <div className="hobby__container">
-                        <p className="hobby__text">ходить там, где мало людей</p>
-                    </div>
-                </div>
-                <div 
-                    className="about__hobby"
-                    style={{
-                        backgroundImage: `url(${league})`
-                    }}
-                >
-                    <div className="hobby__container">
-                        <p className="hobby__text">командные виды спорта</p>
-                    </div>
-                </div>
-                <div 
-                    className="about__hobby"
-                    style={{
-                        backgroundImage: `url(${lovecraft})`
-                    }}
-                >
-                    <div className="hobby__container">
-                        <p className="hobby__text">читать</p>
-                    </div>
-                </div>
-                <div 
-                    className="about__hobby"
-                    style={{
-                        backgroundImage: `url(${skate})`
-                    }}
-                >
-                    <div className="hobby__container">
-                        <p className="hobby__text">кататься боком</p>
-                    </div>
-                </div>
-                <div 
-                    className="about__hobby"
-                    style={{
-                        backgroundImage: `url(${food})`
-                    }}
-                >
-                    <div className="hobby__container">
-                        <p className="hobby__text">готовить и вкусно кушать</p>
-                    </div>
-                </div>
-                <div 
-                    className="about__hobby"
-                    style={{
-                        backgroundImage: `url(${film})`
-                    }}
-                >
-                    <div className="hobby__container">
-                        <p className="hobby__text">хорошее кино</p>
-                    </div>
-                </div>
-            </div>
+        <Container>
+            <SecondaryTitle>Мне нравится</SecondaryTitle>
+            <HobbiesContainer>
+                { cards }
+            </HobbiesContainer>
 
-        </div>
+        </Container>
     )
 }
 

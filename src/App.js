@@ -3,47 +3,42 @@ import { Route } from 'react-router'
 import About from './components/About/About'
 import Header from './components/Header/Header'
 import Main from './components/Main/Main'
-import Menu from './components/Menu/Menu'
 import Projects from './components/Projects/Projects'
 
 function App() {
 
-  const [isOpen, setIsOpen] = React.useState(false)
+  // const [isOpen, setIsOpen] = React.useState(false)
 
-  function handleMenu() {
-    setIsOpen(!isOpen)
-    stopScroll()
-  }
+  // function handleMenu() {
+  //   setIsOpen(!isOpen)
+  //   stopScroll()
+  // }
 
-  function handleClick(e) {
-    if (isOpen && e.target.className === "menu") {
-      setIsOpen(false)
-    }
-  }
+  // function handleClick(e) {
+  //   if (isOpen && e.target.className === "menu") {
+  //     setIsOpen(false)
+  //   }
+  // }
 
-  function stopScroll() {
-    if (isOpen) {
-      document.body.classList.remove('scroll-block')
-    }
-    else if(!isOpen) {
-      document.body.classList.add('scroll-block')
+  // function stopScroll() {
+  //   if (isOpen) {
+  //     document.body.classList.remove('scroll-block')
+  //   }
+  //   else if(!isOpen) {
+  //     document.body.classList.add('scroll-block')
       
-    }
-  }
+  //   }
+  // }
 
-  useEffect(() => {
-  })
+  // useEffect(() => {
+  // })
 
   return (
     <div className="App"
-      onClick = {handleClick}
+      // onClick = {handleClick}
     >
-      <Menu 
-        handleMenu= {handleMenu}
-        isOpen = {isOpen}
-      />
       <Header 
-        handleMenu= {handleMenu}
+        // handleMenu= {handleMenu}
       />
       <Route exact path='/klochkov'>
         <Main/>

@@ -1,23 +1,19 @@
-import { NavLink } from 'react-router-dom'
-import './Main.css'
 import { useEffect } from 'react'
+import { Container, Title, SubTitle, Button, StyledLink } from '../../assets/customStyled'
 
 function Main() {
-
     useEffect(() => {
         document.title = "клочков"
     })
 
     return(
-        <div className="main">
-            <div className="main__container">
-                <h1 className="main__name"> Клочков Александр</h1>
-                <p className="main__description">Фронтенд-разработчик.</p>
-                <NavLink className="main__button-link" to='/projects'>
-                    <button className="main__button button">смотреть проекты</button>
-                </NavLink>
-            </div>
-        </div>
+        <Container>
+            <Title> Клочков Александр</Title>
+            <SubTitle>фронтенд-разработчик</SubTitle>
+            <StyledLink to='/projects'>
+                <Button>смотреть проекты</Button>
+            </StyledLink>
+        </Container>
     )
 }
 
